@@ -10,28 +10,30 @@ import org.testng.annotations.Test;
 import resources.Base;
 
 public class FourTest extends Base {
-	
+
 	WebDriver driver;
-	
+
 	@Test
 	public void fourTest() throws IOException, InterruptedException {
-		
+
+		System.out.println("Lakshman has updated thie code with this statement");
+
 		System.out.println("fourTest");
-		
+
 		driver = initializeDriver();
-		
+
 		driver.get(prop.getProperty("url"));
-		
+
 		Thread.sleep(2000);
-		
+
 		Assert.assertTrue(true);
-		
-		
+
+
 	}
-	
+
 	@AfterMethod
 	public void closingBrowser() {
-		
+
 		driver.close();
 	}
 
